@@ -1,0 +1,237 @@
+/* Light Mode Styles */
+.light-mode {
+    background-color: #f4f4f4; /* Light background color for body */
+    color: #000; /* Dark text color */
+}
+
+.light-mode .viewpage {
+    background-color: #f9f3f3; /* White background for viewpage */
+    color: #000; /* Dark text color for elements inside viewpage */
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #052218; /* Dark background for body */
+    color: #ffffff; /* Light text color */
+}
+
+.dark-mode .viewpage {
+    background-color: #323232; /* Dark background for viewpage */
+    color: #ffffff; /* Light text color for elements inside viewpage */
+}
+body {
+    font-family: 'Roboto', sans-serif; /* Use a consistent font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #052218; /* Dark background */
+    color: white;
+    margin: 0;
+}
+
+.continue {
+    text-align: center;
+    background-color: #d3dbd8;
+}
+
+a {
+    text-decoration: underline;
+    color: rgb(3, 214, 98);
+}
+
+.login-container {
+    background: #052218; /* Dark background for login */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.logo {
+    max-width: 300px;
+    margin-bottom: 5px;
+    height: 189px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #666;
+}
+
+.divider {
+    border: none; /* Remove default border */
+    height: 1px; /* Set height */
+    background-color: #474847; /* Set color */
+    margin: 10px 0; /* Add margin for spacing */
+    width: 100%; /* Full width */
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #dbe4e1; /* Button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Full width for buttons */
+}
+
+button:hover {
+    background-color: #052218; /* Darker background on hover */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: rgb(245, 247, 249);
+    opacity: 0.8;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #323232; /* Dark background for input */
+    color: #fff; /* Light text color */
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #888; /* Gray placeholder text */
+    opacity: 1; /* Fully opaque */
+}
+
+input:focus {
+    border-color: #FF5722; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.viewpage {
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Increased padding for better spacing */
+    border-radius: 10px;
+    width: 88%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    height: 111vh;
+}
+
+.login {
+    text-align: center;
+    background-color: rgb(36, 36, 36);
+    width: 100%; /* Set to 100% to fill the parent */
+    padding: 20px 10px; /* Optional padding for better spacing */
+}
+
+.light-mode {
+    background-color: rgb(241, 231, 231);
+    color: #000000;
+}
+
+.dark-mode {
+    background-color: #052218;
+    color: #691414;
+}
+
+/* Toggle Switch Styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px; /* Adjusted width */
+    height: 20px; /* Adjusted height */
+}
+
+.switch input {
+    opacity: 0; /* Hide the default checkbox */
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc; /* Default background color */
+    transition: .4s; /* Smooth transition */
+    border-radius: 34px; /* Rounded corners */
+}
+
+.slider:before {
+    position : absolute;
+    content: "";
+    height: 16px; /* Adjusted height of the slider */
+    width: 16px; /* Adjusted width of the slider */
+    left: 2px; /* Adjusted position from the left */
+    bottom: 2px; /* Adjusted position from the bottom */
+    background-color: white; /* Slider color */
+    transition: .4s; /* Smooth transition */
+    border-radius: 50%; /* Round shape */
+}
+
+input:checked + .slider {
+    background-color: #2196F3; /* Color when checked */
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px); /* Move the slider */
+}
+
+.bootstrap {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.bootstrap button {
+    flex: 1; /* Equal width for all buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(3, 214, 98);
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 14px;
+    min-width: 59px;
+ }
+
+
+
